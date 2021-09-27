@@ -1,0 +1,124 @@
+/* -- Fonts --*/
+$font-family: "Century Gothic", sans-serif;
+$font-family--s: "Roboto", sans-serif;
+$font-family--t: "Bebas Neue", sans-serif;
+/* -- Colors --*/
+
+/* -- Headers --*/
+$color-header: #242446;
+$color-header--top: linear-gradient(91.42deg, #74798c 0%, #303240 100%);
+
+/* -- Text --*/
+$color-text: #444444;
+$color-text--nav: #444444;
+$color-text--white: #ffffff;
+$color-text--black: #000000;
+$color-nav--top: #808080;
+$color-main--top: #525566;
+
+
+/* -- Menu --*/
+// $color-menu: #111111;
+// $color-menu--hover: rgba(17, 17, 17, 0.6);
+// $color-menu--active: rgba(17, 17, 17, 0.3);
+// $color-menu-alt: #ffffff;
+// $color-menu-alt--hover: rgba(255, 255, 255, 0.6);
+// $color-menu-alt--active: rgba(255, 255, 255, 0.3);
+
+/* -- Backgrounds --*/
+$header--top: linear-gradient(91.42deg, #74798c 0%, #303240 100%);
+$bg--header: #fcfcfc;
+$header--list: #fcfcfc;
+$sec--first: #e1e8eb;
+$sec--second: #525566;
+$sec--third: #f2f2f2;
+$sec--fifth: #f2f2f2;
+$nav--bg: #000000;
+
+
+
+
+/* -- Buttons --*/
+$color-btn: #0364ff;
+$tabs-color: #e9edfe;
+
+
+/* -- Buttons-hover --*/
+
+$hover-btn: rgb(1, 45, 95);
+
+/* -- Buttons-hover-text --*/
+
+$bg-btn: #ffffff;
+
+// /* -- Main shadow --*/
+$header-shadow: 0 4px 40px rgba(0, 0, 0, 0.05);
+$header-list: 0 6px 8px rgba(0, 0, 0, 0.05);
+
+/* -- Borders --*/
+$color-border: #0364ff;
+// $play-border: #01499b;
+// $white-border: #ffffff;
+// $calendar-border: #27aae1;
+// $world-border: #f5483a;
+
+//markup var
+
+
+$brand-primary: #e72a00;
+$brand-secondary: #00ff91;
+$white: #ffffff;
+$black: #000000;
+$violet: #674cc2;
+$grey: #f3f3f3;
+$font-primary: "Roboto-Regular";
+$font-secondary: "Brygada1918-Regular";
+$font-secondary-bold: "Brygada1918-Bold";
+
+::selection {
+  color: $brand-primary;
+
+  background: $black;
+}
+
+
+@mixin scroll {
+  padding-right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* FireFox */
+
+  scrollbar-color: $brand-primary $grey;
+  /* IE */
+  scrollbar-face-color: $brand-primary;
+  scrollbar-highlight-color: $grey;
+  scrollbar-shadow-color: $grey;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $brand-primary;
+    background-clip: padding-box;
+    border: 0 solid $grey;
+
+    &:hover {
+      background-color: $brand-secondary;
+      cursor: pointer;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey;
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar-button {
+    background-color: transparent;
+  }
+}
+
+
+
+/*components var*/
