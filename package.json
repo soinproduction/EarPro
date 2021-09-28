@@ -1,8 +1,8 @@
 {
-  "name": "JST_Shop",
+  "name": "Maris",
   "version": "1.0.0",
   "private": true,
-  "description": "JST_Shop project",
+  "description": "Safari MARIS",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "gulp-csso": "4.0.1",

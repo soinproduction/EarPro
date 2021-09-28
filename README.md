@@ -1,1 +1,3 @@
-# JST shop
+# Safari Maris
+
+developer: Andrey Soin
