@@ -1,0 +1,31 @@
+.header-nav {
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    li:not(:first-child) {
+      margin-left: 35px;
+    }
+
+    li {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.2;
+      color: $text--white;
+      opacity: .8;
+      transition: all .4s;
+    }
+
+    li.active {
+      font-weight: 600;
+      opacity: 1;
+    }
+
+    li:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -8,16 +8,17 @@
   <main class="wrappper markup">
     <div class="container">
       <div class="row">
-        <div class="template-items markup-colors text-content">
+        <div class="template-items markup-colors ">
           <h4>1.Colors</h4>
-          <div class="brand-pri  ary">e77400</div>
-          <div class="brand-secondary">00ff91</div>
-          <div class="violet">674CC2</div>
-          <div class="white">FFFFFF</div>
-          <div class="black">000000</div>
+          <div class="yellow">#FBD836</div>
+          <div class="black">#1C1C1C</div>
+          <div class="blue">#05192C</div>
+          <div class="grey">#8E8E8E</div>
+          <div class="grey-light">#CBCFD3</div>
+          <div class="white">#F7F8FA</div>
         </div>
         <div class="template-items">
-          <h4>2. Цвет текста, шрифт bold, шрифт italik, ссылка в тексте, ::selection</h4>
+          <h4>2. Цвет текста, шрифт bold, шрифт italic, ссылка в тексте, ::selection</h4>
           <p><b>Culpa tenetur perspiciatis quibusdam maxime nostrum?</b><i>Lorem ipsum dolor sit amet, consectetur
               adipisicing elit.</i> Praesentium, non quae in error modi consectetur eaque fuga reiciendis <a
               href="#">totam nostrum?</a> один из видов энергии, используемый практически на каждом предприятии,
@@ -45,11 +46,35 @@
             <li>Lorem, ipsum dolor.</li>
           </ul>
         </div>
+
+        <div class="template-items">
+          <h4>5. Маркерованый список</h4>
+          <ul class="accent-list">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </div>
+
+        <div class="template-items">
+          <h4>6. Альтернативный список</h4>
+          <ul class="alternative-list">
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+        </div>
+
         <div class="template-items">
           <h4>5. Font-family</h4>
           <ol>
-            <li>Font-primary: 'Roboto-Regular';</li>
-            <li>Font-secondary: 'Brygada1918-Regular';</li>
+            <li class="font-family">"Century Gothic", sans-serif</li>
+            <li class="font-family--s">"Roboto", sans-serif</li>
+            <li class="font-family--t">"Bebas Neue", sans-serif;</li>
           </ol>
         </div>
         <div class="template-items">
@@ -81,47 +106,47 @@
           <div class="title_2">h2 - Test title</div>
           <div class="title_3">h3 - Test title</div>
           <div class="title_4">h4 - Test title</div>
-          <div class="title_5">h4 - Test title</div>
+          <div class="title_5">h5 - Test title</div>
           <div class="title_6">h6 - Test title</div>
         </div>
 
         <div class="template-items">
           <h4>9. checkbox, radiobutton</h4>
           <p>
-            <input id="checkbox" type="checkbox" name="terms" checked="checked">
-            <label for="checkbox">
-              Lorem, ipsum dolor.
-            </label>
-            <input type="hidden" name="terms-field" value="1">
+            <div class="checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="default" value="1">
+                <span>Lorem ipsum dolor</span>
+              </label>
+            </div>
           </p>
           <p>
-            <input id="checkbox2" type="checkbox" name="terms">
-            <label for="checkbox2">
-              Lorem, ipsum dolor.
-            </label>
-            <input type="hidden" name="terms-field" value="1">
+            <div class="checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" name="default" value="1">
+                <span>Lorem ipsum dolor</span>
+              </label>
+            </div>
           </p>
           <p>
-            <input id="checkbox3" type="checkbox" name="terms">
-            <label for="checkbox3">
-              Lorem, ipsum dolor.
-            </label>
-            <input type="hidden" name="terms-field" value="1">
+            <div class="radio">
+              <label class="custom-radio">
+                <input type="radio" name="default" value="1">
+                <span>Lorem Ipsum is simply</span>
+              </label>
+            </div>
           </p>
+
           <p>
-            <input type="radio" id="contactChoice1" name="contact" value="email">
-            <label for="contactChoice1">Email</label>
-          </p>
-          <p>
-            <input type="radio" id="contactChoice2" name="contact" value="phone">
-            <label for="contactChoice2">Phone</label>
-          </p>
-          <p>
-            <input type="radio" name="contact" id="contactChoice3" value="flat">
-            <label for="contactChoice3">Доставка курьером </label>
+            <div class="radio">
+              <label class="custom-radio">
+                <input type="radio" name="default" value="1">
+                <span>Lorem Ipsum is simply</span>
+              </label>
+            </div>
           </p>
         </div>
-        <div class="template-items gradient-default">
+        <!-- <div class="template-items gradient-default">
           <h4>10. Кнопки ссылкой </h4>
           <a href="index.html" class="btn btn-primary">Обсудить проект</a>
           <a href="#" class="btn btn-secondary">Узнать результат</a>
@@ -132,28 +157,37 @@
           <a href="#" class="btn btn-light">Light</a>
           <a href="#" class="btn btn-dark">Dark</a>
           <a href="#" class="btn btn-link">Link</a>
-        </div>
-        <div class="template-items"
-          style="background: radial-gradient(#343d35, #21212363);">
+        </div> -->
+        <div class="template-items">
           <h4>11. Кнопки тегом button</h4>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-light">Light</button>
-          <button type="button" class="btn btn-dark">Dark</button>
-          <button type="button" class="btn btn-link">Link</button>
+          <button type="button" class="main-btn">Primary</button>
+
+          <button type="button" class="slider-arrow arrow-l">
+            <svg  width='41' height='9'>
+              <use href='img/sprite/sprite.svg#arrow-l'></use>
+            </svg>
+          </button>
+          <button type="button" class="slider-arrow arrow-r">
+            <svg  width='41' height='9'>
+              <use href='img/sprite/sprite.svg#arrow-r'></use>
+            </svg>
+          </button>
+
         </div>
         <div class="template-items">
           <h4>12. popUp</h4>
           <ol>
-            <li><a href="#ajaxModal" data-toggle="modal">Вызвать "Заголовок модального окна"</a></li>
-            <li><a href="#support" data-toggle="modal">Вызвать"Что-то пошло не так!"</a></li>
-            <li><a href="#subscribe" data-toggle="modal">Вызвать "Подписаться на рассылку"</a></li>
-            <li><a href="#one-click" data-toggle="modal">Вызвать "Купить в один клик"</a></li>
-            <li><a href="#callback" data-toggle="modal">Вызвать "Заказать консультацию"</a></li>
+            <li>
+              <a href="#ajaxModal" data-toggle="modal">
+                Вызвать "Оставьте свои контактные
+                данные для оформления заявки"
+              </a>
+            </li>
+            <li>
+              <a href="#ajaxModal" data-toggle="modal">
+                Вызвать "Технические характеристики Lyra"
+              </a>
+            </li>
           </ol>
         </div>
         <div class="template-items">
@@ -178,8 +212,12 @@
         </div>
         <div class="template-items">
           <h4>14. Fancybox image</h4>
-          <a href="assets/img/x-men.jpg" class="fancybox" data-fancybox="gallery" data-caption="Caption #1">
-            <img class="img-fluid" src="assets/img/x-men.jpg" alt="">
+          <a href="img/img.webp" class="fancybox" data-fancybox="gallery" data-caption="Caption #1">
+            <!-- <img class="img-fluid" src="assets/img/x-men.jpg" alt=""> -->
+            <picture>
+              <source type='image/webp' srcset='img/img.webp'>
+              <img width='470' height='320' src='img/img.png' alt=''>
+            </picture>
           </a>
         </div>
 
@@ -187,13 +225,16 @@
           <h4>15. Fancybox video</h4>
           <a href="https://www.youtube.com/watch?v=7X8II6J-6mU&ab_channel=JeffreyJensen" class="fancybox"
             data-fancybox="gallery" data-caption="Caption #2">
-            <img class="img-fluid" src="assets/img/x-men.jpg" alt="">
+            <picture>
+              <source type='image/webp' srcset='img/img.webp'>
+              <img width='470' height='320' src='img/img.png' alt=''>
+            </picture>
           </a>
         </div>
         <div class="template-items">
           <h4>16. Изображение темы в админке</h4>
           <a href="assets/img/screenshot.jpg" class="fancybox" data-fancybox="gallery" data-caption="Caption #3">
-            <img class="img-fluid" src="assets/img/screenshot.jpg" alt="">
+            <!-- <img class="img-fluid" src="assets/img/screenshot.jpg" alt=""> -->
           </a>
         </div>
         <div class="template-items site-map">
@@ -222,8 +263,15 @@
         <div class="template-items  ">
           <h4>18. fancy-box for wordpres</h4>
           <div class="post-item">
-            <a href="" data-fancybox>
-              <img src="assets/img/screenshot.jpg" class="img-fluid" alt="">
+            <a href="img/img.webp" data-fancybox>
+              <picture>
+                <source type='image/webp' srcset='img/img.webp'>
+                <img width="470" height="320" src='img/img.png' alt=''>
+              </picture>
+            </a>
+
+            <a href="#">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur mollitia qui exercitationem officiis, commodi nihil minima quasi, voluptate molestias nesciunt tenetur recusandae ratione quisquam deleniti, molestiae ipsa ipsum eveniet ut.
             </a>
           </div>
         </div>
@@ -231,98 +279,16 @@
           <h4>19. phone mask</h4>
           <input type="tel" id="phone" class="phone-form form-field" name="phone" placeholder="+38(ХХХ)ХХХ-ХХ-ХХ">
         </div>
-        <div class="template-items  ">
-          <h4>20. position sticky</h4>
-          <div class="parent-sicky">
-            <ul class="child">
-              <li>A</li>
-              <li>able [eibl] a. способный</li>
-              <li>about [ə’baut] prep. о, около</li>
-              <li>abroad [ə’brɔ:d] adv. за границей</li>
-              <li>absence [’œbsəns] n. отсутствие</li>
-              <li>absolute [’œbsəlu:t] a. абсолютный, полный, безусловный</li>
-            </ul>
-            <ul class="child">
-              <li>B</li>
-              <li>baby [’beibi] n. младенец</li>
-              <li>back [bœk] a. задний adv. обратно</li>
-              <li>back up [’bœk ‘ʌp] v. поддерживать</li>
-              <li>bad [bœd] a. плохой</li>
-              <li>badly [’bœdli] adv. плохо</li>
-            </ul>
-            <ul class="child">
-              <li>C</li>
-              <li>cafe [’kœfei] n. кафe</li>
-              <li>call [kɔl] v. звать, называть, навещать</li>
-              <li>calm [kɑ:m] a. спокойный</li>
-              <li>came [keim] Pa.T. от come</li>
-              <li>camera [’kœməra] n. фотоаппарат</li>
-            </ul>
-            <ul class="child">
-              <li>D</li>
-              <li>daily [’deili] a. ежедневный</li>
-              <li>damage [’dœmidʒ] n. вред, повреждение</li>
-              <li>damages [’dœmidʒiz] n.pl. компенсация за убытки</li>
-              <li>I daresay [’dɛə’sei] v. я полагаю, осмелюсь сказать, думаю</li>
-              <li>darling [’dɑ:liη] n. любимый(-ая)</li>
-            </ul>
-            <ul class="child">
-              <li>E</li>
-              <li>early [’ə:li] a. ранний, adv. рано</li>
-              <li>earn [ə:n] v. зарабатывать</li>
-              <li>earth [ə:θ] n. земля</li>
-              <li>eastern [’i:stən] a. восточный</li>
-              <li>easy [’i:zi] a. лёгкий</li>
-            </ul>
-          </div>
-          <style>
-            .parent-sicky {
-              max-height: 450px;
-              overflow: auto;
-            }
 
-            .parent-sicky ul {
-              margin-bottom: 0;
-              padding: 0 15px;
-              background-color: rgb(196, 180, 211);
-            }
-
-            .parent-sicky .child li {
-              background-color: beige;
-              padding: 5px 15px;
-            }
-
-            .parent-sicky .child li:first-child {
-              position: sticky;
-              top: 0;
-              background-color: #9e9e9e;
-              font-size: 22px;
-            }
-
-            .parent-sicky .child li:last-child {
-
-              padding-bottom: 30px;
-            }
-          </style>
-        </div>
-        <div class="template-items">
-          <h4>21. </h4>
-
-
-
-        </div>
-
-
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
     </div>
     </div>
 
     @@include('_footer.html',{})
     <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/common.min.js"></script>
 </body>
 

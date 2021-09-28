@@ -1,0 +1,116 @@
+.checkbox {
+  margin-bottom: 0.2em;
+  position: relative;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2px;
+  color: $text--black;
+  display: flex;
+  align-items: center;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > span::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #E1E1E1;
+  background-color: $color--white;
+  border-radius: 1px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+  cursor: pointer;
+}
+
+
+
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.5l5 5L14.5 1' stroke='%23000' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+// radio
+
+/* для элемента input c type="radio" */
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio > span {
+  display: flex;
+  align-items: center;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+
+  color: $text--color-blue;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio > span::before {
+  content: "";
+
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: 50% 50%;
+  border: 1px solid #E1E1E1;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio > input:checked + span::before {
+  background-color: $color--white;
+  border: 5px solid #FBD836;
+}
+
+.custom-radio > input:checked + span {
+  color: $text--color-blue;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+

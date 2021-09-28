@@ -64,14 +64,15 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
   object-fit: cover;
 }
 
-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// picture img {
+//   display: block;
+//   // justify-content: center;
+//   // align-items: center;
+// }
 
 input {
   width: 100%;

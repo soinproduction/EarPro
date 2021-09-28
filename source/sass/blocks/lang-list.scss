@@ -1,0 +1,22 @@
+.lang-list {
+  display: flex;
+  align-items: center;
+
+  li {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.2;
+    color: $text--white;
+    opacity: .6;
+  }
+
+  li.active {
+    opacity: 1;
+  }
+
+  li + li {
+    margin-left: 20px;
+  }
+}
