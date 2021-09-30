@@ -1,0 +1,147 @@
+.main-slider {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-slide {
+  padding: 60px 0 120px;
+  position: relative;
+
+  &__image {
+    max-width: 84%;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 40px 80px rgba(41, 75, 107, 0.2);
+  }
+
+  &__inner {
+    padding: 60px;
+    position: absolute;
+    top: calc(50% - 60px);
+    transform: translateY(-50%);
+    left: 0;
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.22;
+      color: $text--color-black--alt;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+  }
+}
+
+@-moz-document url-prefix() { // -- only mozila
+  .main-slide__inner {
+    padding: 57px;
+  }
+}
+
+.main-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5.2%;
+  display: flex;
+  grid-gap: 30px;
+}
+
+.main-slide__r {
+  position: relative;
+
+  &::before {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $color--yellow;
+    position: absolute;
+    content: '';
+    right: -50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(0, -50%);
+    transition: all .4s;
+  }
+
+  svg {
+    transition: all .4s;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(3px);
+    }
+
+    &::before {
+      opacity: .8;
+    }
+  }
+}
+
+.main-slide__l {
+  position: relative;
+
+  &::before {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid $color--yellow;
+    position: absolute;
+    content: '';
+    left: -50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(0, -50%);
+    transition: all .4s;
+  }
+
+  svg {
+    transition: all .4s;
+    fill: #fff;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(-3px);
+    }
+
+    &::before {
+      opacity: .8;
+    }
+  }
+}
+
+
+.main-slider__dots {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+
+  button {
+    display: none;
+  }
+
+  li {
+    width: 16px;
+    height: 16px;
+    border: 3px solid $text--white;
+    background: $color--blue;
+    border-radius: 50%;
+  }
+
+  li.slick-active {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #FBD836;
+  }
+}

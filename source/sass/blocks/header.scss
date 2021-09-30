@@ -1,27 +1,30 @@
 header {
   padding: 6px 30px;
+
   background: $color--blue;
 }
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
   &__center {
     display: flex;
     align-items: center;
+
     grid-gap: 35px;
   }
 
   &__left {
     display: flex;
     align-items: center;
-    grid-gap: Min(10vw, 60px);
+
+    grid-gap: 60px;
   }
 
   &__item {
-    max-width: 197px;
     width: 100%;
+    max-width: 197px;
   }
 }

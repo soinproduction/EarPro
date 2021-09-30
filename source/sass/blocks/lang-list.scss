@@ -3,13 +3,14 @@
   align-items: center;
 
   li {
-    font-family: $font-family;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
     line-height: 1.2;
+    font-family: $font-family;
     color: $text--white;
-    opacity: .6;
+
+    opacity: 0.6;
   }
 
   li.active {

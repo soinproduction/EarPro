@@ -1,5 +1,4 @@
 .header-nav {
-
   &__list {
     display: flex;
     align-items: center;
@@ -9,18 +8,21 @@
     }
 
     li {
-      font-family: $font-family;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
       line-height: 1.2;
+      font-family: $font-family;
       color: $text--white;
-      opacity: .8;
-      transition: all .4s;
+
+      opacity: 0.8;
+
+      transition: all 0.4s;
     }
 
     li.active {
       font-weight: 600;
+
       opacity: 1;
     }
 

@@ -133,9 +133,19 @@ input[type="number"] {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 5px;
+
+  &--first {
+    max-width: 1800px;
+    position: relative;
+  }
+
+  &--second {
+    max-width: 970px;
+    position: relative;
+  }
 }
 
 
