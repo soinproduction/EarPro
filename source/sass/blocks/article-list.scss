@@ -1,0 +1,34 @@
+.article-list {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 5px;
+  grid-template-columns: 122px 122px 167px;
+  margin-bottom: 42px;
+
+  &__item {
+    position: relative;
+    background: $color--white-bg;
+    border: 1px solid $color--white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 84px;
+    // padding: 0 24px;
+    width: 100%;
+  }
+
+  &__lable {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 11px;
+    color: $text--color-blue;
+  }
+}

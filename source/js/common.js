@@ -51,13 +51,13 @@
       // asNavFor: ".absolute-slider, .nav-slider",
       // variableWidth: true,
       slidesToShow: 1,
-      infinite: true,
+      infinite: false,
       centerPadding: '23.5vw',
       centerMode: true,
       // autoplay: true,
       // autoplaySpeed: 6000,
-      // prevArrow: $(".third-slide__l"),
-      // nextArrow: $(".third-slide__r"),
+      prevArrow: $(".big-slider__l"),
+      nextArrow: $(".big-slider__r"),
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -141,9 +141,48 @@ initialazeSlickSlider(Sliders.BIG_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
 
 
+// function openCity(evt, cityName) {
+//   // Объявить все переменные
+//   var i, tabcontent, tablinks;
+
+//   // Получить все элементы с class="tabcontent" и скрыть их
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+
+//   // Получить все элементы с class="tablinks" и снять класс "active"
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+
+//   // Показать на текущей вкладке, и добавить класс "active" по ссылке, которая откроется вкладка
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+
+
+$('.program-box__item').hover(function(){
+  $(this).addClass("active");
+  $(".program-box__item").not(this).removeClass("active");
+});
 
 
 
-// $('.big-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//   $('.big-slider__slide.slick-current' ).css('opacity', '0');
-// });
+$(".tab").click(function (event) {
+  $(".tab-content").removeClass("active");
+  $(".tab").removeClass("active");
+  $(this).addClass("active");
+
+  const tabId = $(this).data("tab");
+
+  $($(`#tab${tabId}`)).addClass("active");
+
+  $('.tab-image').animate({
+    transition: 'scale(1)',
+  }, 500);
+
+});
+
+AOS.init();

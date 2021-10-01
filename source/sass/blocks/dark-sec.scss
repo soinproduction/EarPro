@@ -1,4 +1,23 @@
 .dark-sec {
   padding: 90px 0;
   background-image: url(../img/dark-bg.jpg), url(../img/dark-bg.webp);
+
+  &__box {
+    max-width: 510px;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    color: $text--white;
+    margin-bottom: 30px;
+    font-weight: normal;
+  }
+
+  p {
+    color: $text--white;
+    margin-bottom: 30px;
+  }
 }
+
