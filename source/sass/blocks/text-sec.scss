@@ -1,0 +1,26 @@
+.text-sec {
+  padding-bottom: 120px;
+
+  &__top {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__article {
+    max-height: 168px;
+    overflow-y: scroll;
+    @include scroll;
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+
+      color: #000000;
+    }
+  }
+}

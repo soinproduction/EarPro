@@ -157,6 +157,11 @@
   font-size: Min(4.3vw, 16px);
 }
 
+p {
+  font-size: Min( 4.375vw,16px);
+  line-height: Min(6.250vw,24px);
+}
+
 .post-item {
   a {
     color: $text--black;

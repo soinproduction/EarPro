@@ -40,6 +40,50 @@
     // CLASSNAME: '',
   },
 
+  LAST_SLIDER: {
+    ELEMENT: $(".last-slider"),
+    SETTINGS: {
+      accessibility: true,
+      arrows: true,
+      dots: false,
+      speed: 1500,
+      variableWidth: true,
+      slidesToShow: 3,
+      centerMode: true,
+      infinite: true,
+      centerPadding: '200px',
+      // autoplay: true,
+      // autoplaySpeed: 6000,
+      prevArrow: $(".last-slide__l"),
+      nextArrow: $(".last-slide__r"),
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+
+  FAQ_SLIDER: {
+    ELEMENT: $(".faq-slider"),
+    SETTINGS: {
+      accessibility: true,
+      arrows: true,
+      dots: false,
+      speed: 1500,
+      adaptiveHeight:true,
+      focusOnSelect: true,
+      variableWidth: true,
+      slidesToShow: 3,
+      infinite: false,
+      centerMode: true,
+      // centerPadding: '200px',
+      // autoplay: true,
+      // autoplaySpeed: 6000,
+      // prevArrow: $(".last-slide__l"),
+      // nextArrow: $(".last-slide__r"),
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+
   BIG_SLIDER: {
     ELEMENT: $(".big-slider"),
     SETTINGS: {
@@ -137,8 +181,9 @@ function toggleExtraClass(slider) {
 initialazeSlickSlider(Sliders.MAIN_SLIDER);
 initialazeSlickSlider(Sliders.GALERY_SLIDER);
 initialazeSlickSlider(Sliders.BIG_SLIDER);
-// initialazeSlickSlider(Sliders.ABSOLUTE_SLIDER);
+initialazeSlickSlider(Sliders.LAST_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
+initialazeSlickSlider(Sliders.FAQ_SLIDER);
 
 
 // function openCity(evt, cityName) {
@@ -173,16 +218,19 @@ $('.program-box__item').hover(function(){
 $(".tab").click(function (event) {
   $(".tab-content").removeClass("active");
   $(".tab").removeClass("active");
+  $(".tab-image").removeClass("active");
   $(this).addClass("active");
 
   const tabId = $(this).data("tab");
 
-  $($(`#tab${tabId}`)).addClass("active");
+  $($(`#tab${tabId}`)).addClass("active").find('.tab-image').toggleClass('active');
 
-  $('.tab-image').animate({
-    transition: 'scale(1)',
-  }, 500);
+  // let inner = $(`#tab${tabId}`);
+  // inner.find('.tab-image').toggleClass('worked')
+
 
 });
+
+
 
 AOS.init();

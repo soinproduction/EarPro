@@ -146,6 +146,23 @@ input[type="number"] {
     max-width: 970px;
     position: relative;
   }
+
+
+  &--offer {
+    max-width: 990px;
+    padding: 0;
+    position: relative;
+  }
+
+  &--base {
+    max-width: 1180px;
+    position: relative;
+  }
+
+  &--text {
+    max-width: 920px;
+    position: relative;
+  }
 }
 
 

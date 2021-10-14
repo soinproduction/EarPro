@@ -1,0 +1,44 @@
+.reasons-sec {
+  padding-bottom: 120px;
+
+  &__title {
+    font-family: $font-family--t;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: $text--color-blue;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 60px 29px;
+  }
+
+  &__subtitle {
+    min-height: 48px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: $text--color-black--alt;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    border: 1px solid #F7F8FA;
+    box-shadow: 0px 40px 80px rgba(41, 75, 107, 0.1);
+    border-radius: 50%;
+  }
+}
