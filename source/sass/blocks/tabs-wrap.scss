@@ -16,8 +16,8 @@
     font-family: $font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: Min(5.625vw ,20px);
+    line-height: Min( 7.500vw,24px);
     color: $text--color-blue;
   }
 
@@ -43,8 +43,8 @@
 
       button {
         font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
+        // font-size: 20px;
+        // line-height: 24px;
       }
     }
   }
@@ -79,8 +79,6 @@
     font-family: $font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
     color: $text--color-blue;
     margin-bottom: 12px;
   }
@@ -89,8 +87,6 @@
     font-family: $font-family;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
     color: $text--color-blue;
   }
 
@@ -98,8 +94,6 @@
     font-family: $font-family;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
     color: $text--color-black--alt;
     padding-bottom: 30px;
   }

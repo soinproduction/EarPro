@@ -10,11 +10,20 @@
       speed: 1500,
       slidesToShow: 1,
       // infinite: true,
-      autoplay: true,
-      autoplaySpeed: 6000,
+      // autoplay: true,
+      // autoplaySpeed: 6000,
       prevArrow: $(".main-slide__l"),
       nextArrow: $(".main-slide__r"),
       dotsClass: 'main-slider__dots',
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            dots: false,
+          }
+        },
+
+      ]
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -35,6 +44,16 @@
       // autoplaySpeed: 6000,
       prevArrow: $(".third-slide__l"),
       nextArrow: $(".third-slide__r"),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0',
+          }
+        },
+
+      ]
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
