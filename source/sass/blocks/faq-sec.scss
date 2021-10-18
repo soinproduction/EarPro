@@ -69,3 +69,18 @@
     transform: translateY(0);
   }
 }
+
+.offer-sec__image img {
+  border-radius: 4px;
+}
+
+
+.faq-buttons {
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+  margin-top: -50px;
+  z-index: 20;
+  position: relative;
+}
+

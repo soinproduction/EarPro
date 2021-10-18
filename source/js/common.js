@@ -9,15 +9,12 @@
       dots: true,
       speed: 1500,
       slidesToShow: 1,
-      // infinite: true,
-      // autoplay: true,
-      // autoplaySpeed: 6000,
       prevArrow: $(".main-slide__l"),
       nextArrow: $(".main-slide__r"),
       dotsClass: 'main-slider__dots',
       responsive: [
         {
-          breakpoint: 576,
+          breakpoint: 992,
           settings: {
             dots: false,
           }
@@ -46,9 +43,25 @@
       nextArrow: $(".third-slide__r"),
       responsive: [
         {
-          breakpoint: 576,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
+            centerPadding: '0',
+          }
+        },
+
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            centerPadding: '0',
+          }
+        },
+
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
             centerPadding: '0',
           }
         },
@@ -71,10 +84,61 @@
       centerMode: true,
       infinite: true,
       centerPadding: '200px',
-      // autoplay: true,
-      // autoplaySpeed: 6000,
       prevArrow: $(".last-slide__l"),
       nextArrow: $(".last-slide__r"),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            edgeFriction: 0.5,
+            centerPadding: '0',
+            centerMode: false,
+            variableWidth: true,
+            arrows: false,
+          }
+        },
+
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            edgeFriction: 0.5,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            edgeFriction: 0.5,
+            centerPadding: '0',
+            variableWidth:false,
+          }
+        },
+
+        {
+          breakpoint: 1441,
+          settings: {
+            slidesToShow: 4,
+            edgeFriction: 0.5,
+            centerPadding: '0',
+            variableWidth:false,
+          }
+        },
+
+
+        {
+          breakpoint: 1601,
+          settings: {
+            slidesToShow: 4,
+            edgeFriction: 0.5,
+            centerPadding: '0',
+            variableWidth:false,
+          }
+        },
+
+      ]
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -96,10 +160,56 @@
       // centerPadding: '200px',
       // autoplay: true,
       // autoplaySpeed: 6000,
-      // prevArrow: $(".last-slide__l"),
-      // nextArrow: $(".last-slide__r"),
+      prevArrow: $(".faq-slide__l"),
+      nextArrow: $(".faq-slide__r"),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0',
+            centerMode: false,
+            variableWidth: true,
+            adaptiveHeight: false,
+          }
+        },
+
+      ]
     },
     // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+
+  REASON_SLIDER: {
+    ELEMENT: $(".reasons-sec__list"),
+    SETTINGS: {
+      accessibility: true,
+      arrows: true,
+      dots: false,
+      speed: 800,
+      focusOnSelect: true,
+      variableWidth: true,
+      slidesToShow: 3,
+      infinite: false,
+      centerMode: true,
+      // centerPadding: '200px',
+      // autoplay: true,
+      // autoplaySpeed: 6000,
+      // prevArrow: $(".last-slide__l"),
+      // nextArrow: $(".last-slide__r"),
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0',
+            adaptiveHeight: true,
+          }
+        },
+
+      ]
+    },
+    BREAKPOINT: 991,
     // CLASSNAME: '',
   },
 
@@ -121,30 +231,48 @@
       // autoplaySpeed: 6000,
       prevArrow: $(".big-slider__l"),
       nextArrow: $(".big-slider__r"),
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '0',
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            initialSlide: 2,
+            // centerPadding: '0',
+          }
+        },
+
+        {
+          breakpoint: 1201,
+          settings: {
+            centerPadding: '15%',
+          }
+        },
+        {
+          breakpoint: 1441,
+          settings: {
+            centerPadding: '15%',
+          }
+        },
+
+        {
+          breakpoint: 1601,
+          settings: {
+            centerPadding: '15%',
+          }
+        },
+
+      ]
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
   },
-
-  // ABSOLUTE_SLIDER: {
-  //   ELEMENT: $(".absolute-slider"),
-  //   SETTINGS: {
-  //     accessibility: true,
-  //     arrows: false,
-  //     dots: false,
-  //     speed: 1500,
-  //     // variableWidth: true,
-  //     slidesToShow: 1,
-  //     infinite: true,
-  //     asNavFor: ".big-slider, .nav-slider",
-  //     // autoplay: true,
-  //     // autoplaySpeed: 6000,
-  //     // prevArrow: $(".third-slide__l"),
-  //     // nextArrow: $(".third-slide__r"),
-  //   },
-  //   // BREAKPOINT: 1600,
-  //   // CLASSNAME: '',
-  // },
 
   NAV_SLIDER: {
     ELEMENT: $(".nav-slider"),
@@ -203,28 +331,7 @@ initialazeSlickSlider(Sliders.BIG_SLIDER);
 initialazeSlickSlider(Sliders.LAST_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
 initialazeSlickSlider(Sliders.FAQ_SLIDER);
-
-
-// function openCity(evt, cityName) {
-//   // Объявить все переменные
-//   var i, tabcontent, tablinks;
-
-//   // Получить все элементы с class="tabcontent" и скрыть их
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-
-//   // Получить все элементы с class="tablinks" и снять класс "active"
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-
-//   // Показать на текущей вкладке, и добавить класс "active" по ссылке, которая откроется вкладка
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
+initialazeSlickSlider(Sliders.REASON_SLIDER);
 
 
 $('.program-box__item').hover(function(){
@@ -247,9 +354,149 @@ $(".tab").click(function (event) {
   // let inner = $(`#tab${tabId}`);
   // inner.find('.tab-image').toggleClass('worked')
 
-
 });
 
 
 
-AOS.init();
+const items = document.querySelectorAll('.rent-box__inner');
+const images = document.querySelectorAll('.rent-box__image');
+
+images.forEach(function(image) {
+  if (document.documentElement.clientWidth < 992) {
+    image.classList.add('panel');
+  } else {
+    image.classList.remove('panel');
+  }
+})
+
+items.forEach(function(item) {
+  if (document.documentElement.clientWidth < 992) {
+    item.classList.add('accordion');
+  } else {
+    item.classList.remove('accordion');
+  }
+
+})
+
+
+const itemsFirst = document.querySelectorAll('.program-box__body');
+const imageFirst = document.querySelectorAll('.hidden-image');
+
+imageFirst.forEach(function(image) {
+  if (document.documentElement.clientWidth < 992) {
+    image.classList.add('panel');
+  } else {
+    image.classList.remove('panel');
+  }
+})
+
+itemsFirst.forEach(function(item) {
+  if (document.documentElement.clientWidth < 992) {
+    item.classList.add('accordion');
+  } else {
+    item.classList.remove('accordion');
+  }
+
+})
+
+
+// ----------------- Аккордион --------------------
+/**
+ * Классы для аккордиона
+ */
+ const accordeon = {
+  CLASS: 'accordion',
+  CLASS_ACTIVE: 'active',
+}
+
+/**
+ * acc - неизменная переменная для работы с аккордионом
+ */
+const acc = document.querySelectorAll(`.${accordeon.CLASS}`);
+let openedAccordeon = null;
+
+/**
+ * использует nextElementSibling для открытия или закрытия аккордиона
+ */
+function closeAccordeon(acc) {
+  acc.previousElementSibling.style.maxHeight = 0;
+  acc.classList.remove(accordeon.CLASS_ACTIVE);
+}
+
+
+function openAccordeon(acc) {
+  acc.previousElementSibling.style.maxHeight = `${acc.previousElementSibling.scrollHeight}px`;
+  acc.classList.add(accordeon.CLASS_ACTIVE);
+}
+
+/**
+ * Проверка на открытие аккордиона !nextElementSibling!
+ */
+function isAccordeonOpen(acc) {
+  acc.previousElementSibling && !acc.previousElementSibling.style.maxHeight
+}
+
+/**
+ * Итерация, реализация переключения открытого аккордиона
+ *
+ */
+
+
+
+for (const accordeon of acc) {
+  accordeon.addEventListener("click", function () {
+    const currentAccordeon = this;
+
+    openedAccordeon && closeAccordeon(openedAccordeon);
+
+    if (isAccordeonOpen(currentAccordeon)) {
+      closeAccordeon(currentAccordeon);
+    } else {
+      openAccordeon(currentAccordeon);
+      openedAccordeon = currentAccordeon;
+    }
+  });
+};
+
+// --------------
+
+
+
+
+
+if (document.documentElement.clientWidth > 768) {
+  AOS.init();
+}
+
+
+var h = document.querySelector(".hard-box");
+var s = document.querySelector(".absolite-box__blur");
+
+if (document.documentElement.clientWidth < 992) {
+  h.insertAdjacentElement("beforeend", s);
+}
+
+$('.burger-menu').click(function(){
+  $(this).toggleClass('active');
+  $('.mobile-menu').toggleClass('active');
+  $('body').toggleClass('fixed');
+});
+
+
+$('[data-modal=offer]').on('click', function(){
+  $('.overlay, #offer-modal').fadeIn('slow');
+});
+
+ $('.close-modal').on('click', function(){
+  $('.overlay, .modal').fadeOut('slow');
+});
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".modal"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('.overlay, #offer-modal').fadeOut('slow');
+		}
+	});
+});

@@ -7,6 +7,11 @@ body {
   font-family: "Century Gothic";
   color: #000000;
   background-color: #fff;
+
+  &.fixed {
+    overflow: hidden;
+    position: fixed;
+  }
 }
 
 html {
@@ -106,7 +111,11 @@ input[type="number"] {
   z-index: 20;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out !important;
+}
+
+.vissible {
+  max-height: 100%;
 }
 
 .select__body {

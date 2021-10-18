@@ -1421,6 +1421,22 @@
           </div>
         </div>
 
+        <div class="faq-buttons">
+
+          <button type="button" class="slider-arrow faq-slide__l">
+            <svg  width='41' height='9'>
+              <use href='img/sprite/sprite.svg#arrow-l'></use>
+            </svg>
+          </button>
+          <button type="button" class="slider-arrow faq-slide__r">
+            <svg  width='41' height='9'>
+              <use href='img/sprite/sprite.svg#arrow-r'></use>
+            </svg>
+          </button>
+
+
+        </div>
+
       </div>
     </section>
 
@@ -1495,7 +1511,7 @@
                   от 37 854 грн
                 </span>
 
-                <button class="main-btn">
+                <button data-modal="offer" class="main-btn">
                   Оставить заявку
                 </button>
 
@@ -1536,6 +1552,7 @@
   </main>
 
   @@include('_footer.html',{})
+  @@include('_modal.html',{})
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

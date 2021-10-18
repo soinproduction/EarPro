@@ -26,7 +26,7 @@
 }
 
 
-.third-slide__r, .last-slide__r {
+.third-slide__r, .last-slide__r, .faq-slide__r {
   position: relative;
 
   &::before {
@@ -58,7 +58,7 @@
   }
 }
 
-.third-slide__l, .last-slide__l {
+.third-slide__l, .last-slide__l, .faq-slide__l {
   position: relative;
 
   &::before {
@@ -136,8 +136,8 @@ a[data-fancybox="gallery-video"] {
   font-family: $font-family--t;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
-  line-height: 72px;
+  // font-size: 60px;
+  // line-height: 72px;
   text-align: center;
   color: $text--color-blue;
   margin-bottom: 80px;

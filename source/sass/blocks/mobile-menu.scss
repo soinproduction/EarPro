@@ -1,0 +1,131 @@
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  grid-gap: 6px;
+  max-width: 36px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  flex-shrink: 0;
+
+
+  span {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+    display: block;
+    transition: all .4s;
+  }
+}
+
+
+.burger-menu.active {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 4px);
+  }
+
+  span:nth-child(2) {
+    opacity: 0;
+  }
+
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -5px);
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  padding: 60px 30px 30px;
+  height: calc(100vh - 64px);
+  max-width: 100%;
+  width: 100%;
+  background: #05192C;
+  z-index: 50;
+  left: 0;
+  top: 64px;
+  transform: translateX(-100%);
+  transition: all .4s;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .header-nav {
+    display: grid;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 15px;
+
+      li + li {
+        margin: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 22px;
+    border-top: 1px solid #FFFFFF;
+  }
+}
+
+.mobile-menu__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu__lang {
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
+
+  li {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: $text--white;
+    opacity: .5;
+  }
+
+  li.active {
+    opacity: 1;
+  }
+}
+
+.mobile-menu__social {
+  display: flex;
+  grid-gap: 26px;
+  align-items: center;
+}
+
+.mobile-menu__bottom {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.mobile-menu__contact {
+  display: grid;
+  grid-gap: 12px;
+
+  li {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: $text--white;
+  }
+
+  .mobile-phone {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,169 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 120;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+#offer-modal {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  max-width: 778px;
+  width: 100%;
+  background: $color--white;
+  box-shadow: 0px 40px 80px rgba(41, 75, 107, 0.1);
+  border-radius: 10px;
+  padding: 120px 0 90px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  box-shadow: 0px 40px 80px rgba(41, 75, 107, 0.1);
+  border-radius: 50%;
+}
+
+.modal-title {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  max-width: 580px;
+  margin: 0 auto;
+  font-size: Min( 6.250vw,32px);
+  line-height: Min( 7.500vw,44px);
+  margin-bottom: 60px;
+  text-align: center;
+  color: $text--black;
+}
+
+.modal-form {
+  width: 42%;
+  display: grid;
+  grid-gap: 18px;
+  margin: 0 auto;
+
+  label {
+    display: block;
+  }
+
+  input {
+    background: #FFFFFF;
+    border: 1px solid #8E8E8E;
+    border-radius: 4px;
+    text-indent: 24px;
+    height: 60px;
+
+    &::placeholder {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size:Min( 4.063vw ,16px);
+      line-height: Min(24px,24px);
+      color: $text--color-blue;
+    }
+  }
+}
+
+
+.checkbox-list {
+  display: grid;
+  grid-gap: 12px;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
+.modal-btn {
+  margin: 0 auto;
+}
+
+@media screen and (max-height: 800px) {
+  .overlay {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .modal {
+    height: 100%;
+    padding:  0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .overlay {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .modal {
+    height: auto;
+    padding: 30px 5px;
+  }
+
+  .modal-form {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .modal-title {
+    margin-bottom: 24px;
+  }
+
+  .checkbox-list {
+    margin-bottom: 0;
+  }
+
+  .close-modal {
+    right: 0px;
+    top: -30px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .overlay {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .modal {
+    height: auto;
+    padding: 55px 5px;
+  }
+
+  .modal-form {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .modal-title {
+    margin-bottom: 24px;
+  }
+
+  .checkbox-list {
+    margin-bottom: 0;
+  }
+
+  .close-modal {
+    right: 0px;
+    top: -30px;
+  }
+
+
+}
+
+
+
+
